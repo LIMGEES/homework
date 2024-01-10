@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 등록</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table class="table-type1">
+        <caption>회원 등록</caption>
+        <colgroup>
+            <col style="width: px;">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th><label for="txt_1">사번</label></th>
+                <td><input type="text" id="txt_1"></td>
+            </tr>
+            <tr>
+                <th><label for="txt_2"></label>비밀 번호</label></th>
+                <td><input type="password" id="txt_2"></td>
+            </tr>
+            <tr>
+                <th><label for="txt_3">이름</label></th>
+                <td><input type="text" id="txt_3"></td>
+            </tr>
+            <tr>
+                <th>성별</th>
+                <td>
+                    <ul class="check-list">
+                        <li><input type="checkbox" name="" id="check_1"><label class="checkbox" for="check_1">남성</label>
+                        </li>
+                        <li><input type="checkbox" name="" id="check_2"><label class="checkbox" for="check_2">여성</label>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="txt_4">생년 월일</label></th>
+                <td><input type="date" id="txt_4"></td>
+            </tr>
+            <tr>
+                <th><label for="txt_5">주소</label></th>
+                <td><input type="text" style="--w:260" id="txt_5"></td>
+            </tr>
+            <tr>
+                <th><label for="txt_6">휴대폰</label></th>
+                <td><input type="tel" style="--w:260" id="txt_6"></td>
+            </tr>
+            <tr>
+                <th><label for="txt_7">이메일</label></th>
+                <td><input type="email" style="--w:260" id="txt_7"></td>
+            </tr>
+            <tr>
+                <th><label for="txt_8">적요</label></th>
+                <td><input type="text" style="--w:260" id="txt_8"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="align center btn-group mt-20">
+        <button type="button" class="btn-save">저장</button>
+        <button type="button" class="btn-update">수정</button>
+    </div>
+
+</body>
+
+</html>

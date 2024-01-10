@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{ color:inherit}
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+} 
+caption{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    border: 0;
+    width:  1px;
+    height:  1px;
+    clip: rect(1px,1px,1px,1px);
+}
+body{
+    padding: 30px;
+    
+}
+:root{
+    --black:#222;
+    --gray:#868D93;
+    --blue:#1F48D4;
+    --lightgray:#E9ECEF;
+    --lightblue:#D3DAF7;
+    --darkblue:#354D9A;
+}
+.table-type1{
+    border-top: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+
+}
+.table-type1 th,
+.table-type1 td{
+    padding:  10px 0;
+}
+.table-type1 tr ~ tr{
+    border-top: 1px solid var(--gray);
+}
+.table-type1 th{
+    font-size:  16px;
+    font-weight: 500;
+    text-align: left;
+}
+input[type="checkbox"],
+input[type="toggle"]{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    border: 0;
+    width:  1px;
+    height:  1px;
+    clip: rect(1px,1px,1px,1px);
+}
+input + .checkbox{
+    padding-left: 25px;
+    background: url(images/checkbox-off.svg) no-repeat left;
+}
+input:checked + .checkbox{
+    background: url(images/checkbox-on.svg)no-repeat left;
+}
+input:not([type="radio"],[type="checkbox"]){
+    height: 35px;
+    border: 1px solid var(--gray);
+    width: calc(var(--w,auto)* 1px);
+}
+.btn-save{
+    width: 130px;
+    height: 45px;
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    font-size: 15px;
+    color: var(--lightgray);
+}
+.btn-update{
+    width: 130px;
+    height: 45px;
+    border: 1px solid var(--black);
+    font-size: 15px;
+    color: var(--black);
+}
+
+/*정렬*/
+.check-list{
+    display: flex;
+    gap: 29px;
+}
+.align{
+    display: flex;
+}
+.align.center{
+    justify-content: center;
+}
+.btn-group{
+    display: flex;
+    gap: 10px;
+}
+.mt-20{
+    margin-top:20px;
+}
+.w100{
+    width: 100% !important;
+}
